@@ -2,722 +2,859 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1"
->
-
-<meta name="theme-color" content="#faf9f7">
-
-<meta
-  name="description"
-  content="R Brothers presents Kabaddi 5 – Special Screening in Yokohama on November 8, 2026. Experience the movie on a 300-inch screen with professional Panasonic laser projection. Tickets ¥2,500."
->
-
-<title>Kabaddi 5 Yokohama | R Brothers Events</title>
-
-<style>
-
-/* ========================================
-   GLOBAL
-======================================== */
-
-:root {
-  --black: #131313;
-  --gold: #a77b38;
-  --background: #faf9f7;
-  --white: #ffffff;
-  --border: #e8e5df;
-  --muted: #777777;
-  --green: #128c4a;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background: var(--background);
-  color: var(--black);
-
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
-
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* ========================================
-   HEADER
-======================================== */
-
-header {
-  text-align: center;
-  padding: 12px 0 25px;
-}
-
-.logo {
-  width: 88px;
-  height: 88px;
-  padding: 7px;
-  object-fit: contain;
-  background: #050505;
-  border-radius: 19px;
-}
-
-.brand {
-  margin-top: 10px;
-  font-size: 13px;
-  font-weight: 750;
-  letter-spacing: 4px;
-}
-
-.brand-subtitle {
-  font-size: 10px;
-  color: var(--muted);
-  letter-spacing: 2px;
-  margin-top: 4px;
-}
-
-/* ========================================
-   POSTER
-======================================== */
-
-.poster {
-  width: 100%;
-  display: block;
-  border-radius: 15px;
-
-  box-shadow:
-    0 8px 35px rgba(0, 0, 0, 0.08);
-}
-
-/* ========================================
-   TITLES
-======================================== */
-
-h1 {
-  font-size: 31px;
-  letter-spacing: -0.8px;
-  margin: 25px 0 6px;
-  font-weight: 750;
-}
-
-.subtitle {
-  color: var(--gold);
-  font-size: 12px;
-  font-weight: 750;
-  letter-spacing: 2px;
-  line-height: 1.6;
-}
-
-.intro {
-  color: #666;
-  font-size: 14px;
-  line-height: 1.8;
-  margin-top: 16px;
-}
-
-.section {
-  margin-top: 38px;
-}
-
-.section h2 {
-  font-size: 20px;
-  margin-bottom: 17px;
-  letter-spacing: -0.3px;
-}
-
-.section-description {
-  color: #666;
-  font-size: 13px;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-/* ========================================
-   EVENT DETAILS
-======================================== */
-
-.event-details {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 15px;
-  padding: 4px 18px;
-}
-
-.detail {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 17px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.detail:last-child {
-  border-bottom: none;
-}
-
-.label {
-  font-size: 13px;
-  color: var(--muted);
-  flex-shrink: 0;
-}
-
-.value {
-  font-size: 13px;
-  font-weight: 650;
-  text-align: right;
-  line-height: 1.6;
-}
-
-/* ========================================
-   BUTTONS
-======================================== */
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  min-height: 50px;
-
-  padding: 13px 15px;
-  margin-top: 12px;
-
-  text-align: center;
-  text-decoration: none;
-
-  background: var(--black);
-  color: white;
-
-  border-radius: 11px;
-
-  font-size: 14px;
-  font-weight: 700;
-
-  transition: opacity 0.2s ease;
-}
-
-.btn:active {
-  opacity: 0.7;
-}
-
-.btn-outline {
-  background: white;
-  color: var(--black);
-  border: 1px solid var(--border);
-}
-
-/* ========================================
-   PRICE
-======================================== */
-
-.ticket-section {
-  text-align: center;
-  padding-top: 5px;
-}
-
-.price-label {
-  font-size: 11px;
-  letter-spacing: 2px;
-  color: var(--muted);
-  font-weight: 700;
-}
-
-.price {
-  font-size: 40px;
-  color: var(--gold);
-  font-weight: 800;
-  margin: 8px 0;
-}
-
-.note {
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.8;
-}
-
-/* ========================================
-   VENUE GALLERY - NEW
-======================================== */
-
-.venue-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.venue-photo {
-  margin: 0;
-  overflow: hidden;
-  border-radius: 13px;
-  background: #e8e5df;
-}
-
-.venue-photo:first-child {
-  grid-column: span 2;
-}
-
-.venue-photo img {
-  display: block;
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  cursor: zoom-in;
-}
-
-.venue-photo:first-child img {
-  height: 260px;
-}
-
-.venue-photo figcaption {
-  padding: 11px 12px;
-  background: white;
-  font-size: 12px;
-  font-weight: 650;
-  color: #555;
-}
-
-.venue-location {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 13px;
-  padding: 17px;
-  margin-top: 15px;
-}
-
-.venue-location h3 {
-  margin: 0 0 7px;
-  font-size: 16px;
-}
-
-.venue-location p {
-  color: #666;
-  font-size: 13px;
-  line-height: 1.8;
-  margin: 0;
-}
-
-/* ========================================
-   CINEMA EXPERIENCE - NEW
-======================================== */
-
-.cinema-section {
-  background: #111111;
-  color: white;
-
-  border-radius: 18px;
-  padding: 25px 20px;
-}
-
-.cinema-heading {
-  text-align: center;
-  color: #d9b87a;
-
-  font-size: 11px;
-  font-weight: 750;
-  letter-spacing: 3px;
-}
-
-.cinema-title {
-  text-align: center;
-  font-size: 25px;
-  line-height: 1.3;
-  font-weight: 750;
-  margin: 12px 0;
-}
-
-.cinema-description {
-  font-size: 13px;
-  color: #cccccc;
-  line-height: 1.9;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.cinema-specs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.spec {
-  border: 1px solid #343434;
-  border-radius: 12px;
-
-  background: #1d1d1d;
-
-  padding: 20px 12px;
-  text-align: center;
-}
-
-.spec-value {
-  color: #d9b87a;
-  font-size: 25px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-}
-
-.spec-label {
-  margin-top: 6px;
-  font-size: 11px;
-  color: #aaaaaa;
-  line-height: 1.5;
-}
-
-.projector-details {
-  margin-top: 20px;
-  padding: 18px;
-
-  border: 1px solid #343434;
-  border-radius: 12px;
-}
-
-.projector-details h3 {
-  font-size: 15px;
-  margin: 0 0 12px;
-  color: #e3c38c;
-}
-
-.projector-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-
-  padding: 11px 0;
-  border-bottom: 1px solid #303030;
-
-  font-size: 12px;
-}
-
-.projector-row:last-child {
-  border-bottom: none;
-}
-
-.projector-row span:first-child {
-  color: #999;
-}
-
-.projector-row span:last-child {
-  text-align: right;
-  color: white;
-  font-weight: 600;
-}
-
-.cinema-note {
-  margin-top: 18px;
-  color: #999;
-  font-size: 11px;
-  line-height: 1.7;
-  text-align: center;
-}
-
-/* ========================================
-   STEPS
-======================================== */
-
-.steps {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.step {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  margin-bottom: 22px;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.step:last-child {
-  margin-bottom: 0;
-}
-
-.number {
-  flex-shrink: 0;
-
-  width: 28px;
-  height: 28px;
-
-  background: var(--black);
-  border-radius: 50%;
-  color: white;
-
-  display: grid;
-  place-items: center;
-
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.step strong {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 3px;
-}
-
-.step-description {
-  color: #666;
-  font-size: 13px;
-}
-
-/* ========================================
-   RECEIPT INFO
-======================================== */
-
-.receipt-info {
-  margin-top: 18px;
-  background: #f3efe8;
-  border-radius: 12px;
-  padding: 18px;
-}
-
-.receipt-info h3 {
-  font-size: 14px;
-  margin: 0 0 9px;
-}
-
-.receipt-info p {
-  font-size: 13px;
-  line-height: 1.8;
-  margin: 0;
-  color: #625a4e;
-}
-
-/* ========================================
-   CONTACTS
-======================================== */
-
-.contact {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 13px;
-
-  padding: 17px;
-  margin-bottom: 12px;
-}
-
-.contact-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.contact-name {
-  font-size: 16px;
-  font-weight: 750;
-}
-
-.contact-phone {
-  font-size: 13px;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
-.contact-actions {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-
-  gap: 8px;
-  margin-top: 15px;
-}
-
-.contact-actions a {
-  min-height: 43px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-  text-decoration: none;
-
-  border-radius: 9px;
-  padding: 8px 4px;
-
-  font-size: 12px;
-  font-weight: 700;
-
-  background: #f1f1f1;
-  color: #222;
-}
-
-.contact-actions .whatsapp {
-  background: #e8f8ee;
-  color: #128c4a;
-}
-
-.contact-actions .facebook {
-  background: #e8f0ff;
-  color: #1877f2;
-}
-
-.line-info {
-  margin-top: 17px;
-  padding: 17px;
-  background: #edf8ef;
-  border-radius: 12px;
-}
-
-.line-info strong {
-  display: block;
-  font-size: 14px;
-  color: #168c46;
-  margin-bottom: 7px;
-}
-
-.line-info p {
-  color: #4b6755;
-  font-size: 12px;
-  line-height: 1.8;
-  margin: 0;
-}
-
-/* ========================================
-   PHOTO LIGHTBOX
-======================================== */
-
-.lightbox {
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-
-  display: none;
-  align-items: center;
-  justify-content: center;
-
-  background: rgba(0, 0, 0, 0.92);
-  padding: 18px;
-}
-
-.lightbox.active {
-  display: flex;
-}
-
-.lightbox img {
-  max-width: 100%;
-  max-height: 85vh;
-  object-fit: contain;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 15px;
-  right: 18px;
-
-  border: none;
-  background: transparent;
-
-  color: white;
-  font-size: 32px;
-  cursor: pointer;
-}
-
-/* ========================================
-   FOOTER
-======================================== */
-
-footer {
-  text-align: center;
-  margin-top: 50px;
-
-  padding: 25px 0 30px;
-  border-top: 1px solid var(--border);
-}
-
-.copyright {
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.developer-credit {
-  margin-top: 14px;
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.developer-credit a {
-  color: var(--gold);
-  text-decoration: none;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-}
-
-/* ========================================
-   RESPONSIVE
-======================================== */
-
-@media (max-width: 360px) {
-
-  .container {
-    padding: 14px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  .value {
-    font-size: 12px;
-  }
-
-  .venue-photo img {
-    height: 130px;
-  }
-
-  .venue-photo:first-child img {
-    height: 195px;
-  }
-
-  .cinema-title {
-    font-size: 22px;
-  }
-
-  .spec-value {
-    font-size: 21px;
-  }
-
-  .contact {
-    padding: 13px;
-  }
-
-  .contact-actions {
-    gap: 5px;
-  }
-
-  .contact-actions a {
-    font-size: 11px;
-  }
-}
-
-</style>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta name="theme-color" content="#faf9f7">
+
+  <meta
+    name="description"
+    content="R Brothers presents Kabaddi 5 – Special Screening in Yokohama on November 8, 2026. Tickets ¥2,500."
+  >
+
+  <title>Kabaddi 5 Yokohama | R Brothers Events</title>
+
+  <style>
+
+    :root {
+      --black: #131313;
+      --gold: #a77b38;
+      --background: #faf9f7;
+      --white: #ffffff;
+      --border: #e8e5df;
+      --muted: #777777;
+      --green: #16803d;
+      --red: #b91c1c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--black);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.lightbox-open {
+      overflow: hidden;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* ================================
+       HEADER
+    ================================ */
+
+    header {
+      text-align: center;
+      padding: 12px 0 24px;
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      padding: 7px;
+      object-fit: contain;
+      background: #050505;
+      border-radius: 19px;
+    }
+
+    .brand {
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: 4px;
+    }
+
+    .brand-subtitle {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
+
+    /* ================================
+       LANGUAGE SWITCHER
+    ================================ */
+
+    .language-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .lang-btn {
+      min-height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 9px 15px;
+      background: white;
+      color: #555;
+      font-size: 13px;
+      font-weight: 650;
+      transition: background 0.2s;
+    }
+
+    .lang-btn.active {
+      background: var(--black);
+      color: white;
+      border-color: var(--black);
+    }
+
+    /* ================================
+       POSTER
+    ================================ */
+
+    .poster {
+      display: block;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 35px #00000014;
+    }
+
+    /* ================================
+       TYPOGRAPHY
+    ================================ */
+
+    h1 {
+      font-size: 31px;
+      letter-spacing: -0.8px;
+      margin: 25px 0 6px;
+      font-weight: 750;
+    }
+
+    .subtitle {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 1.5px;
+      line-height: 1.7;
+    }
+
+    .intro {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.9;
+      margin-top: 16px;
+    }
+
+    .section {
+      margin-top: 38px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 17px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-description {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    /* ================================
+       EVENT DETAILS
+    ================================ */
+
+    .event-details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 4px 18px;
+    }
+
+    .detail {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .detail:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      font-size: 13px;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .value {
+      font-size: 13px;
+      font-weight: 650;
+      text-align: right;
+      line-height: 1.7;
+    }
+
+    /* ================================
+       BUTTONS
+    ================================ */
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      min-height: 50px;
+
+      padding: 13px 15px;
+      margin-top: 12px;
+
+      text-align: center;
+      text-decoration: none;
+
+      background: var(--black);
+      color: white;
+
+      border-radius: 11px;
+
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .btn:active {
+      opacity: 0.75;
+    }
+
+    .btn-outline {
+      background: white;
+      color: var(--black);
+      border: 1px solid var(--border);
+    }
+
+    /* ================================
+       PRICE
+    ================================ */
+
+    .ticket-section {
+      text-align: center;
+    }
+
+    .price-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .price {
+      font-size: 40px;
+      color: var(--gold);
+      font-weight: 800;
+      margin: 8px 0;
+    }
+
+    /* ================================
+       VENUE GALLERY
+    ================================ */
+
+    .venue-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .venue-photo {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 13px;
+      background: #e8e5df;
+    }
+
+    .venue-photo:first-child {
+      grid-column: span 2;
+    }
+
+    .venue-photo img {
+      display: block;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      cursor: zoom-in;
+    }
+
+    .venue-photo:first-child img {
+      height: 260px;
+    }
+
+    .venue-photo figcaption {
+      padding: 11px 12px;
+      background: white;
+      font-size: 12px;
+      font-weight: 650;
+      color: #555;
+    }
+
+    .venue-location {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 17px;
+      margin-top: 15px;
+    }
+
+    .venue-location h3 {
+      margin: 0 0 7px;
+      font-size: 16px;
+    }
+
+    .venue-location p {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* ================================
+       CINEMA EXPERIENCE
+    ================================ */
+
+    .cinema-section {
+      background: #111;
+      color: white;
+      border-radius: 18px;
+      padding: 25px 20px;
+    }
+
+    .cinema-heading {
+      text-align: center;
+      color: #d9b87a;
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: 2px;
+    }
+
+    .cinema-title {
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.3;
+      font-weight: 750;
+      margin: 12px 0;
+    }
+
+    .cinema-description {
+      font-size: 13px;
+      color: #ccc;
+      line-height: 1.9;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .cinema-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .spec {
+      border: 1px solid #343434;
+      border-radius: 12px;
+      background: #1d1d1d;
+      padding: 20px 12px;
+      text-align: center;
+    }
+
+    .spec-value {
+      color: #d9b87a;
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    .spec-label {
+      margin-top: 6px;
+      font-size: 11px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .projector-details {
+      margin-top: 20px;
+      padding: 18px;
+      border: 1px solid #343434;
+      border-radius: 12px;
+    }
+
+    .projector-details h3 {
+      font-size: 15px;
+      margin: 0 0 12px;
+      color: #e3c38c;
+    }
+
+    .projector-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid #303030;
+      font-size: 12px;
+    }
+
+    .projector-row:last-child {
+      border-bottom: none;
+    }
+
+    .projector-row span:first-child {
+      color: #999;
+    }
+
+    .projector-row span:last-child {
+      text-align: right;
+      font-weight: 600;
+    }
+
+    .cinema-note {
+      margin-top: 18px;
+      color: #999;
+      font-size: 11px;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    /* ================================
+       PURCHASE STEPS
+    ================================ */
+
+    .steps {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 22px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .step:last-child {
+      margin-bottom: 0;
+    }
+
+    .number {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: var(--black);
+      border-radius: 50%;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .step strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 14px;
+    }
+
+    .step-description {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .receipt-info {
+      margin-top: 18px;
+      background: #f3efe8;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .receipt-info h3 {
+      font-size: 14px;
+      margin: 0 0 9px;
+    }
+
+    .receipt-info p {
+      font-size: 13px;
+      line-height: 1.9;
+      margin: 0;
+      color: #625a4e;
+    }
+
+    /* ================================
+       QR ENTRY FLOW
+    ================================ */
+
+    .entry-section {
+      border-radius: 18px;
+      padding: 23px 18px;
+      background: white;
+      border: 1px solid var(--border);
+    }
+
+    .entry-heading {
+      text-align: center;
+    }
+
+    .entry-heading h2 {
+      font-size: 21px;
+      margin: 0 0 9px;
+    }
+
+    .entry-heading p {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.8;
+      margin: 0 0 25px;
+    }
+
+    .entry-flow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .entry-step {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+
+      border: 1px solid var(--border);
+      border-radius: 13px;
+
+      padding: 17px;
+      background: #fff;
+    }
+
+    .entry-icon {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+      border-radius: 14px;
+
+      background: #f3efe7;
+
+      display: grid;
+      place-items: center;
+
+      font-size: 29px;
+    }
+
+    .entry-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .entry-text strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .entry-text p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.7;
+      color: #666;
+    }
+
+    .flow-arrow {
+      font-size: 23px;
+      font-weight: 700;
+      color: var(--gold);
+      padding: 8px 0;
+      line-height: 1;
+    }
+
+    .entry-step.final {
+      border-color: #b7dec5;
+      background: #f1faf4;
+    }
+
+    .entry-step.final .entry-icon {
+      background: #dcfce7;
+    }
+
+    .entry-notice {
+      margin-top: 20px;
+      padding: 18px;
+      border-radius: 12px;
+      background: #f4f6f8;
+    }
+
+    .entry-notice h3 {
+      font-size: 14px;
+      margin: 0 0 12px;
+    }
+
+    .entry-notice p {
+      font-size: 12px;
+      line-height: 1.85;
+      color: #555;
+      margin: 0 0 9px;
+    }
+
+    .entry-notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ================================
+       CONTACTS
+    ================================ */
+
+    .contact {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 17px;
+      margin-bottom: 12px;
+    }
+
+    .contact-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .contact-name {
+      font-size: 16px;
+      font-weight: 750;
+    }
+
+    .contact-phone {
+      font-size: 13px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .contact-actions {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .contact-actions a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 43px;
+
+      text-align: center;
+      text-decoration: none;
+
+      border-radius: 9px;
+      padding: 8px 4px;
+
+      font-size: 12px;
+      font-weight: 700;
+
+      background: #f1f1f1;
+      color: #222;
+    }
+
+    .contact-actions .whatsapp {
+      background: #e8f8ee;
+      color: #128c4a;
+    }
+
+    .contact-actions .facebook {
+      background: #e8f0ff;
+      color: #1877f2;
+    }
+
+    .line-info {
+      margin-top: 17px;
+      padding: 17px;
+      background: #edf8ef;
+      border-radius: 12px;
+    }
+
+    .line-info strong {
+      display: block;
+      font-size: 14px;
+      color: #168c46;
+      margin-bottom: 7px;
+    }
+
+    .line-info p {
+      color: #4b6755;
+      font-size: 12px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* ================================
+       PHOTO LIGHTBOX
+    ================================ */
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+
+      display: none;
+      align-items: center;
+      justify-content: center;
+
+      background: rgba(0, 0, 0, 0.92);
+      padding: 18px;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 85vh;
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 15px;
+      right: 18px;
+
+      border: none;
+      background: transparent;
+      color: white;
+
+      font-size: 32px;
+    }
+
+    /* ================================
+       FOOTER
+    ================================ */
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 25px 0 30px;
+      border-top: 1px solid var(--border);
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .developer-credit {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .developer-credit a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    /* ================================
+       MOBILE
+    ================================ */
+
+    @media (max-width: 360px) {
+
+      .container {
+        padding: 14px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .value {
+        font-size: 12px;
+      }
+
+      .venue-photo img {
+        height: 130px;
+      }
+
+      .venue-photo:first-child img {
+        height: 195px;
+      }
+
+      .cinema-title {
+        font-size: 22px;
+      }
+
+      .spec-value {
+        font-size: 21px;
+      }
+
+      .contact {
+        padding: 13px;
+      }
+
+      .contact-actions {
+        gap: 5px;
+      }
+
+      .contact-actions a {
+        font-size: 11px;
+      }
+
+      .entry-step {
+        gap: 10px;
+        padding: 13px;
+      }
+
+      .entry-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 25px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
@@ -734,17 +871,45 @@ footer {
       class="logo"
     >
 
-    <div class="brand">R BROTHERS</div>
+    <div class="brand">
+      R BROTHERS
+    </div>
 
-    <div class="brand-subtitle">
+    <div class="brand-subtitle" data-i18n="officialEvents">
       OFFICIAL EVENTS
+    </div>
+
+    <!-- LANGUAGE SWITCHER -->
+
+    <div class="language-switcher">
+
+      <button
+        class="lang-btn active"
+        id="langEn"
+        type="button"
+        onclick="setLanguage('en')"
+        aria-pressed="true"
+      >
+        🇬🇧 English
+      </button>
+
+      <button
+        class="lang-btn"
+        id="langNe"
+        type="button"
+        onclick="setLanguage('ne')"
+        aria-pressed="false"
+      >
+        🇳🇵 नेपाली
+      </button>
+
     </div>
 
   </header>
 
   <main>
 
-    <!-- MOVIE POSTER -->
+    <!-- POSTER -->
 
     <img
       src="./kabaddi5-poster.png"
@@ -756,15 +921,17 @@ footer {
 
     <h1>Kabaddi 5</h1>
 
-    <div class="subtitle">
+    <div
+      class="subtitle"
+      data-i18n="screeningSubtitle"
+    >
       SPECIAL SCREENING IN YOKOHAMA
     </div>
 
-    <p class="intro">
+    <p class="intro" data-i18n="intro">
       R Brothers proudly presents the special screening
       of the Nepali movie Kabaddi 5 in Yokohama, Japan.
-
-      Join us for an unforgettable evening of Nepali cinema
+      Join us for an evening of Nepali cinema
       with friends and family.
     </p>
 
@@ -772,37 +939,57 @@ footer {
 
     <section class="section">
 
-      <h2>Event Information</h2>
+      <h2 data-i18n="eventInformation">
+        Event Information
+      </h2>
 
       <div class="event-details">
 
         <div class="detail">
-          <span class="label">Event</span>
-          <span class="value">
-            Kabaddi 5<br>
-            Special Screening
+          <span class="label" data-i18n="eventLabel">
+            Event
+          </span>
+
+          <span class="value" data-i18n="eventName">
+            Kabaddi 5 Special Screening
           </span>
         </div>
 
         <div class="detail">
-          <span class="label">Date</span>
-          <span class="value">
+          <span class="label" data-i18n="dateLabel">
+            Date
+          </span>
+
+          <span class="value" data-i18n="eventDate">
             Sunday, November 8, 2026
           </span>
         </div>
 
         <div class="detail">
-          <span class="label">Doors Open</span>
-          <span class="value">5:30 PM</span>
+          <span class="label" data-i18n="doorsLabel">
+            Doors Open
+          </span>
+
+          <span class="value" data-i18n="doorsTime">
+            5:30 PM
+          </span>
         </div>
 
         <div class="detail">
-          <span class="label">Screening Time</span>
-          <span class="value">6:30 PM</span>
+          <span class="label" data-i18n="screeningLabel">
+            Screening Time
+          </span>
+
+          <span class="value" data-i18n="screeningTime">
+            6:30 PM
+          </span>
         </div>
 
         <div class="detail">
-          <span class="label">Venue</span>
+          <span class="label" data-i18n="venueLabel">
+            Venue
+          </span>
+
           <span class="value">
             Mizuki Hall<br>
             ミズキーホール<br>
@@ -811,10 +998,13 @@ footer {
         </div>
 
         <div class="detail">
-          <span class="label">Access</span>
-          <span class="value">
+          <span class="label" data-i18n="accessLabel">
+            Access
+          </span>
+
+          <span class="value" data-i18n="accessValue">
             Shin-Tsunashima Station<br>
-            Approximately 15 minutes<br>
+            Approximately 15 minutes
             from Yokohama Station by train
           </span>
         </div>
@@ -823,20 +1013,62 @@ footer {
 
     </section>
 
-    <!-- VENUE PHOTO GALLERY - NEW -->
+    <!-- TICKET PRICE -->
+
+    <section class="section ticket-section">
+
+      <div
+        class="price-label"
+        data-i18n="generalAdmission"
+      >
+        GENERAL ADMISSION
+      </div>
+
+      <div class="price">
+        ¥2,500
+      </div>
+
+      <p class="note" data-i18n="priceNote">
+        Contact our representatives to reserve
+        your tickets and receive payment instructions.
+      </p>
+
+      <a
+        href="#contacts"
+        class="btn"
+        data-i18n="getTickets"
+      >
+        Get Tickets
+      </a>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=横浜市港北区民文化センター"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-outline"
+        data-i18n="viewMap"
+      >
+        View Location on Google Maps
+      </a>
+
+    </section>
+
+    <!-- VENUE PHOTOS -->
 
     <section class="section" id="venue">
 
-      <h2>Discover the Venue</h2>
+      <h2 data-i18n="discoverVenue">
+        Discover the Venue
+      </h2>
 
-      <p class="section-description">
-        The screening will take place at
-        <strong>Mizuki Hall</strong>,
-        located inside the Yokohama Kohoku
-        Ward Cultural Center.
-
-        Explore the venue where we will welcome
-        our guests for this special event.
+      <p
+        class="section-description"
+        data-i18n="venueDescription"
+      >
+        The screening will take place at Mizuki Hall,
+        located inside the Yokohama Kohoku Ward
+        Cultural Center. Explore the venue where
+        we will welcome our guests.
       </p>
 
       <div class="venue-gallery">
@@ -845,12 +1077,12 @@ footer {
 
           <img
             src="./mizuki-hall-seats.jpg"
-            alt="Mizuki Hall auditorium and seating"
+            alt="Mizuki Hall auditorium"
             loading="lazy"
             onclick="openLightbox(this.src, this.alt)"
           >
 
-          <figcaption>
+          <figcaption data-i18n="auditorium">
             Mizuki Hall — Auditorium
           </figcaption>
 
@@ -860,12 +1092,12 @@ footer {
 
           <img
             src="./mizuki-hall-entrance.jpg"
-            alt="Mizuki Hall reception area"
+            alt="Mizuki Hall reception"
             loading="lazy"
             onclick="openLightbox(this.src, this.alt)"
           >
 
-          <figcaption>
+          <figcaption data-i18n="reception">
             Modern Reception Area
           </figcaption>
 
@@ -875,12 +1107,12 @@ footer {
 
           <img
             src="./mizuki-hall.jpg"
-            alt="Interior view of Mizuki Hall"
+            alt="Mizuki Hall interior"
             loading="lazy"
             onclick="openLightbox(this.src, this.alt)"
           >
 
-          <figcaption>
+          <figcaption data-i18n="hallInterior">
             Hall Interior
           </figcaption>
 
@@ -892,10 +1124,9 @@ footer {
 
         <h3>📍 Mizuki Hall</h3>
 
-        <p>
+        <p data-i18n="venueLocationText">
           横浜市港北区民文化センター<br>
           ミズキーホール<br><br>
-
           Conveniently accessible from
           Shin-Tsunashima Station.
         </p>
@@ -905,6 +1136,7 @@ footer {
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn-outline"
+          data-i18n="openMaps"
         >
           Open in Google Maps
         </a>
@@ -913,167 +1145,148 @@ footer {
 
     </section>
 
-    <!-- CINEMA EXPERIENCE - NEW -->
+    <!-- CINEMA EXPERIENCE -->
 
     <section class="section">
 
       <div class="cinema-section">
 
-        <div class="cinema-heading">
+        <div
+          class="cinema-heading"
+          data-i18n="bigScreenHeading"
+        >
           THE BIG SCREEN EXPERIENCE
         </div>
 
-        <h2 class="cinema-title">
+        <h2
+          class="cinema-title"
+          data-i18n="cinemaTitle"
+        >
           Experience Kabaddi 5<br>
           on a 300-Inch Screen
         </h2>
 
-        <p class="cinema-description">
+        <p
+          class="cinema-description"
+          data-i18n="cinemaDescription"
+        >
           Enjoy Kabaddi 5 on a massive
           300-inch projection screen,
           powered by a professional
           Panasonic high-brightness laser projector.
-
-          Experience the movie on a large screen
-          designed to bring every scene
-          to life.
         </p>
 
         <div class="cinema-specs">
 
           <div class="spec">
+            <div class="spec-value">300"</div>
 
-            <div class="spec-value">
-              300"
+            <div
+              class="spec-label"
+              data-i18n="screenSpec"
+            >
+              Large Projection Screen
             </div>
-
-            <div class="spec-label">
-              Large Projection<br>
-              Screen
-            </div>
-
           </div>
 
           <div class="spec">
+            <div class="spec-value">16,500</div>
 
-            <div class="spec-value">
-              16,500
+            <div
+              class="spec-label"
+              data-i18n="brightnessSpec"
+            >
+              Lumens Brightness
             </div>
-
-            <div class="spec-label">
-              Lumens<br>
-              Brightness
-            </div>
-
           </div>
 
           <div class="spec">
+            <div class="spec-value">WUXGA</div>
 
-            <div class="spec-value">
-              WUXGA
+            <div
+              class="spec-label"
+              data-i18n="resolutionSpec"
+            >
+              1920 × 1200 Native Resolution
             </div>
-
-            <div class="spec-label">
-              1920 × 1200<br>
-              Native Resolution
-            </div>
-
           </div>
 
           <div class="spec">
+            <div class="spec-value">3LCD</div>
 
-            <div class="spec-value">
-              3LCD
+            <div
+              class="spec-label"
+              data-i18n="technologySpec"
+            >
+              Laser Projection Technology
             </div>
-
-            <div class="spec-label">
-              Laser Projection<br>
-              Technology
-            </div>
-
           </div>
 
         </div>
 
         <div class="projector-details">
 
-          <h3>Projection Equipment</h3>
+          <h3 data-i18n="projectionEquipment">
+            Projection Equipment
+          </h3>
 
           <div class="projector-row">
-            <span>Projector</span>
+            <span data-i18n="projectorLabel">
+              Projector
+            </span>
             <span>Panasonic PT-MZ17KJL</span>
           </div>
 
           <div class="projector-row">
-            <span>Brightness</span>
+            <span data-i18n="brightnessLabel">
+              Brightness
+            </span>
             <span>16,500 Lumens</span>
           </div>
 
           <div class="projector-row">
-            <span>Technology</span>
+            <span data-i18n="technologyLabel">
+              Technology
+            </span>
             <span>3LCD Laser</span>
           </div>
 
           <div class="projector-row">
-            <span>Resolution</span>
+            <span data-i18n="resolutionLabel">
+              Resolution
+            </span>
             <span>WUXGA (1920 × 1200)</span>
           </div>
 
           <div class="projector-row">
-            <span>Screen Size</span>
+            <span data-i18n="screenSizeLabel">
+              Screen Size
+            </span>
             <span>300 Inches</span>
           </div>
 
         </div>
 
-        <p class="cinema-note">
+        <p
+          class="cinema-note"
+          data-i18n="cinemaNote"
+        >
           Professional projection equipment is planned
-          for this screening.
-
-          Actual picture quality also depends on
-          screen setup, room lighting, source material,
-          and projection configuration.
+          for this screening. Actual picture quality
+          depends on the setup and source material.
         </p>
 
       </div>
 
     </section>
 
-    <!-- TICKET PRICE -->
-
-    <section class="section ticket-section">
-
-      <div class="price-label">
-        GENERAL ADMISSION
-      </div>
-
-      <div class="price">¥2,500</div>
-
-      <p class="note">
-        Contact our representatives to reserve
-        your tickets and receive payment instructions.
-      </p>
-
-      <a href="#contacts" class="btn">
-        Get Tickets
-      </a>
-
-      <a
-        href="https://www.google.com/maps/search/?api=1&query=横浜市港北区民文化センター"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-outline"
-      >
-        View Location on Google Maps
-      </a>
-
-    </section>
-
-    <!-- TICKET PURCHASE PROCESS -->
+    <!-- HOW TO BUY -->
 
     <section class="section">
 
-      <h2>How to Get Your Ticket</h2>
+      <h2 data-i18n="howToGetTicket">
+        How to Get Your Ticket
+      </h2>
 
       <div class="steps">
 
@@ -1082,11 +1295,16 @@ footer {
           <span class="number">1</span>
 
           <div>
-            <strong>Contact R Brothers</strong>
+            <strong data-i18n="buyStep1Title">
+              Contact R Brothers
+            </strong>
 
-            <div class="step-description">
-              Contact any of our representatives
-              using phone, Facebook, or WhatsApp
+            <div
+              class="step-description"
+              data-i18n="buyStep1"
+            >
+              Contact any representative through
+              phone, Facebook, or WhatsApp
               to reserve your tickets.
             </div>
           </div>
@@ -1098,9 +1316,14 @@ footer {
           <span class="number">2</span>
 
           <div>
-            <strong>Receive Payment Instructions</strong>
+            <strong data-i18n="buyStep2Title">
+              Receive Payment Instructions
+            </strong>
 
-            <div class="step-description">
+            <div
+              class="step-description"
+              data-i18n="buyStep2"
+            >
               Our team will provide payment details
               and confirm your ticket quantity.
             </div>
@@ -1113,12 +1336,16 @@ footer {
           <span class="number">3</span>
 
           <div>
-            <strong>Complete Payment</strong>
+            <strong data-i18n="buyStep3Title">
+              Complete Payment
+            </strong>
 
-            <div class="step-description">
-              Make your payment and send a screenshot
-              of your payment receipt through
-              Facebook Messenger, WhatsApp, or LINE.
+            <div
+              class="step-description"
+              data-i18n="buyStep3"
+            >
+              Complete payment and send your receipt
+              through Messenger, WhatsApp, or LINE.
             </div>
           </div>
 
@@ -1129,14 +1356,17 @@ footer {
           <span class="number">4</span>
 
           <div>
-            <strong>Receive Your QR Ticket</strong>
+            <strong data-i18n="buyStep4Title">
+              Receive Your QR Ticket
+            </strong>
 
-            <div class="step-description">
-              After payment is verified,
-              our team will send your digital ticket
-              containing a unique QR code.
-
-              Present the QR code at the entrance.
+            <div
+              class="step-description"
+              data-i18n="buyStep4"
+            >
+              After payment is confirmed,
+              we will send your ticket containing
+              a unique QR code.
             </div>
           </div>
 
@@ -1144,27 +1374,186 @@ footer {
 
       </div>
 
-      <!-- RECEIPT INFORMATION -->
-
       <div class="receipt-info">
 
-        <h3>Payment Receipt Submission</h3>
+        <h3 data-i18n="receiptTitle">
+          Payment Receipt Submission
+        </h3>
 
-        <p>
-          After completing payment, please send
-          your payment receipt to the R Brothers
-          representative you contacted.
-
-          You may send it through
-          <strong>
-            Facebook Messenger, WhatsApp, or LINE
-          </strong>.
-
-          Please include your name and number of tickets.
-
-          Your QR ticket will be issued after
-          the payment has been confirmed.
+        <p data-i18n="receiptDescription">
+          After completing payment, send your receipt
+          to the R Brothers representative you contacted.
+          Include your name and ticket quantity.
+          Your QR ticket will be issued after payment
+          is verified.
         </p>
+
+      </div>
+
+    </section>
+
+    <!-- QR ENTRANCE GUIDE -->
+
+    <section class="section" id="entrance">
+
+      <div class="entry-section">
+
+        <div class="entry-heading">
+
+          <h2 data-i18n="entryTitle">
+            How to Enter the Hall
+          </h2>
+
+          <p data-i18n="entryIntro">
+            Entry is simple and secure.
+            Your ticket contains a unique QR code
+            that our staff will scan at the entrance.
+          </p>
+
+        </div>
+
+        <div class="entry-flow">
+
+          <!-- STEP 1 -->
+
+          <div class="entry-step">
+
+            <div class="entry-icon">
+              🎟️
+            </div>
+
+            <div class="entry-text">
+
+              <strong data-i18n="entryStep1Title">
+                1. Receive Your Ticket
+              </strong>
+
+              <p data-i18n="entryStep1">
+                After payment confirmation,
+                you will receive your ticket
+                containing a unique QR code.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <!-- STEP 2 -->
+
+          <div class="entry-step">
+
+            <div class="entry-icon">
+              📱
+            </div>
+
+            <div class="entry-text">
+
+              <strong data-i18n="entryStep2Title">
+                2. Show Your QR Code
+              </strong>
+
+              <p data-i18n="entryStep2">
+                At the entrance, open your ticket
+                on your phone or present
+                your printed ticket.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <!-- STEP 3 -->
+
+          <div class="entry-step">
+
+            <div class="entry-icon">
+              📷
+            </div>
+
+            <div class="entry-text">
+
+              <strong data-i18n="entryStep3Title">
+                3. Staff Scans Your Ticket
+              </strong>
+
+              <p data-i18n="entryStep3">
+                Our staff will scan your QR code
+                using the R Brothers ticket
+                verification system.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="flow-arrow">↓</div>
+
+          <!-- STEP 4 -->
+
+          <div class="entry-step final">
+
+            <div class="entry-icon">
+              ✅
+            </div>
+
+            <div class="entry-text">
+
+              <strong data-i18n="entryStep4Title">
+                4. Verification Successful — Enter!
+              </strong>
+
+              <p data-i18n="entryStep4">
+                Once your ticket is confirmed
+                as valid and unused,
+                our staff will welcome you inside.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- IMPORTANT NOTES -->
+
+        <div class="entry-notice">
+
+          <h3 data-i18n="entryNoticeTitle">
+            Important Information
+          </h3>
+
+          <p data-i18n="entryNotice1">
+            ✓ Each ticket has a unique QR code
+            and allows one admission only.
+          </p>
+
+          <p data-i18n="entryNotice2">
+            ✓ Keep your ticket ready before
+            reaching the entrance.
+          </p>
+
+          <p data-i18n="entryNotice3">
+            ✓ If using a smartphone,
+            increase screen brightness
+            to make scanning easier.
+          </p>
+
+          <p data-i18n="entryNotice4">
+            ✓ Once scanned and checked in,
+            the same QR code cannot be used
+            for another entry.
+          </p>
+
+          <p data-i18n="entryNotice5">
+            ✓ If you experience any problem,
+            please ask our entrance staff for help.
+          </p>
+
+        </div>
 
       </div>
 
@@ -1174,37 +1563,37 @@ footer {
 
     <section class="section" id="contacts">
 
-      <h2>Contact for Tickets</h2>
+      <h2 data-i18n="contactTitle">
+        Contact for Tickets
+      </h2>
 
       <div id="contactList"></div>
 
       <div class="line-info">
 
-        <strong>LINE & WhatsApp</strong>
+        <strong data-i18n="lineTitle">
+          LINE & WhatsApp
+        </strong>
 
-        <p>
+        <p data-i18n="lineDescription">
           You can also add our representatives
           on WhatsApp or LINE using their
           registered phone numbers.
-
-          After making your payment,
-          send your receipt directly through
+          Send your payment receipt through
           your preferred messaging application.
         </p>
 
       </div>
 
-      <p class="note" style="margin-top:18px">
-
-        Please contact our team before sending
-        any payment.
-
-        Tickets are issued only after successful
-        payment confirmation.
-
-        Keep your QR ticket safe and present it
-        at the entrance on the event day.
-
+      <p
+        class="note"
+        style="margin-top:18px"
+        data-i18n="contactNote"
+      >
+        Please contact our team before making payment.
+        Tickets are issued only after payment
+        confirmation. Keep your QR ticket safe
+        and present it at the entrance.
       </p>
 
     </section>
@@ -1216,7 +1605,10 @@ footer {
   <footer>
 
     <div class="copyright">
-      © 2026 R Brothers. All rights reserved.
+      © 2026 R Brothers.
+      <span data-i18n="rights">
+        All rights reserved.
+      </span>
     </div>
 
     <div class="developer-credit">
@@ -1242,12 +1634,13 @@ footer {
   class="lightbox"
   id="lightbox"
   role="dialog"
-  aria-label="Venue photo"
   aria-modal="true"
+  aria-label="Venue photo"
   onclick="closeLightbox()"
 >
 
   <button
+    type="button"
     class="lightbox-close"
     onclick="closeLightbox()"
     aria-label="Close photo"
@@ -1255,152 +1648,636 @@ footer {
     &times;
   </button>
 
-  <img id="lightboxImage" alt="Venue photograph">
+  <img
+    id="lightboxImage"
+    alt="Venue photograph"
+  >
 
 </div>
 
 <script>
 
-/* ========================================
-   CONTACT DATA
-======================================== */
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
 
 const contacts = [
-
   {
     name: "Som",
     phone: "07074938119",
     whatsapp: "817074938119",
     facebook: "https://www.facebook.com/som.rai/"
   },
-
   {
     name: "Bason",
     phone: "09035363760",
     whatsapp: "819035363760",
     facebook: "https://www.facebook.com/basanta.rai.52459"
   },
-
   {
     name: "Bhabin",
     phone: "08064454426",
     whatsapp: "818064454426",
     facebook: "https://www.facebook.com/vaabinn.ryee"
   },
-
   {
     name: "Nisan",
     phone: "08095232999",
     whatsapp: "818095232999",
     facebook: "https://www.facebook.com/nisan.k.rai"
   }
-
 ];
 
-/* ========================================
-   WHATSAPP MESSAGE
-======================================== */
+/* =========================================
+   TRANSLATIONS
+========================================= */
 
-const whatsappMessage =
-  "Hello R Brothers! " +
-  "I would like to purchase tickets for " +
-  "Kabaddi 5 – Yokohama Screening " +
-  "on November 8, 2026. " +
-  "Please provide ticket availability " +
-  "and payment instructions.";
+const translations = {
 
-/* ========================================
-   CREATE CONTACT CARDS
-======================================== */
+  en: {
 
-const contactList =
-  document.getElementById("contactList");
+    officialEvents: "OFFICIAL EVENTS",
 
-contacts.forEach(person => {
+    screeningSubtitle:
+      "SPECIAL SCREENING IN YOKOHAMA",
 
-  const card = document.createElement("div");
-  card.className = "contact";
+    intro:
+      "R Brothers proudly presents the special screening " +
+      "of the Nepali movie Kabaddi 5 in Yokohama, Japan. " +
+      "Join us for an evening of Nepali cinema " +
+      "with friends and family.",
 
-  const top = document.createElement("div");
-  top.className = "contact-top";
+    eventInformation: "Event Information",
+    eventLabel: "Event",
+    eventName: "Kabaddi 5 Special Screening",
+    dateLabel: "Date",
+    eventDate: "Sunday, November 8, 2026",
+    doorsLabel: "Doors Open",
+    doorsTime: "5:30 PM",
+    screeningLabel: "Screening Time",
+    screeningTime: "6:30 PM",
+    venueLabel: "Venue",
+    accessLabel: "Access",
 
-  const name = document.createElement("span");
-  name.className = "contact-name";
-  name.textContent = person.name;
+    accessValue:
+      "Shin-Tsunashima Station. Approximately " +
+      "15 minutes from Yokohama Station by train.",
 
-  const phone = document.createElement("span");
-  phone.className = "contact-phone";
-  phone.textContent = person.phone;
+    generalAdmission: "GENERAL ADMISSION",
 
-  top.appendChild(name);
-  top.appendChild(phone);
+    priceNote:
+      "Contact our representatives to reserve " +
+      "your tickets and receive payment instructions.",
 
-  const actions = document.createElement("div");
-  actions.className = "contact-actions";
+    getTickets: "Get Tickets",
 
-  // PHONE
+    viewMap: "View Location on Google Maps",
 
-  const call = document.createElement("a");
+    discoverVenue: "Discover the Venue",
 
-  call.href = "tel:" + person.phone;
-  call.textContent = "Call";
+    venueDescription:
+      "The screening will take place at Mizuki Hall, " +
+      "located inside the Yokohama Kohoku Ward " +
+      "Cultural Center. Explore the venue where " +
+      "we will welcome our guests.",
 
-  call.setAttribute(
-    "aria-label",
-    "Call " + person.name
+    auditorium: "Mizuki Hall — Auditorium",
+    reception: "Modern Reception Area",
+    hallInterior: "Hall Interior",
+
+    venueLocationText:
+      "横浜市港北区民文化センター / ミズキーホール. " +
+      "Conveniently accessible from Shin-Tsunashima Station.",
+
+    openMaps: "Open in Google Maps",
+
+    bigScreenHeading: "THE BIG SCREEN EXPERIENCE",
+
+    cinemaTitle:
+      "Experience Kabaddi 5 on a 300-Inch Screen",
+
+    cinemaDescription:
+      "Enjoy Kabaddi 5 on a massive 300-inch " +
+      "projection screen, powered by a professional " +
+      "Panasonic high-brightness laser projector.",
+
+    screenSpec: "Large Projection Screen",
+    brightnessSpec: "Lumens Brightness",
+    resolutionSpec: "1920 × 1200 Native Resolution",
+    technologySpec: "Laser Projection Technology",
+
+    projectionEquipment: "Projection Equipment",
+    projectorLabel: "Projector",
+    brightnessLabel: "Brightness",
+    technologyLabel: "Technology",
+    resolutionLabel: "Resolution",
+    screenSizeLabel: "Screen Size",
+
+    cinemaNote:
+      "Professional projection equipment is planned " +
+      "for this screening. Actual picture quality " +
+      "depends on the setup and source material.",
+
+    howToGetTicket: "How to Get Your Ticket",
+
+    buyStep1Title: "Contact R Brothers",
+
+    buyStep1:
+      "Contact any representative through phone, " +
+      "Facebook, or WhatsApp to reserve your tickets.",
+
+    buyStep2Title: "Receive Payment Instructions",
+
+    buyStep2:
+      "Our team will provide payment details " +
+      "and confirm your ticket quantity.",
+
+    buyStep3Title: "Complete Payment",
+
+    buyStep3:
+      "Complete payment and send your receipt " +
+      "through Messenger, WhatsApp, or LINE.",
+
+    buyStep4Title: "Receive Your QR Ticket",
+
+    buyStep4:
+      "After payment is confirmed, we will send " +
+      "your ticket containing a unique QR code.",
+
+    receiptTitle: "Payment Receipt Submission",
+
+    receiptDescription:
+      "After completing payment, send your receipt " +
+      "to the R Brothers representative you contacted. " +
+      "Include your name and ticket quantity. " +
+      "Your QR ticket will be issued after payment " +
+      "is verified.",
+
+    entryTitle: "How to Enter the Hall",
+
+    entryIntro:
+      "Entry is simple and secure. Your ticket " +
+      "contains a unique QR code that our staff " +
+      "will scan at the entrance.",
+
+    entryStep1Title: "1. Receive Your Ticket",
+
+    entryStep1:
+      "After payment confirmation, you will receive " +
+      "your ticket containing a unique QR code.",
+
+    entryStep2Title: "2. Show Your QR Code",
+
+    entryStep2:
+      "At the entrance, open your ticket on your " +
+      "phone or present your printed ticket.",
+
+    entryStep3Title: "3. Staff Scans Your Ticket",
+
+    entryStep3:
+      "Our staff will scan your QR code using " +
+      "the R Brothers ticket verification system.",
+
+    entryStep4Title:
+      "4. Verification Successful — Enter!",
+
+    entryStep4:
+      "Once your ticket is confirmed as valid " +
+      "and unused, our staff will welcome you inside.",
+
+    entryNoticeTitle: "Important Information",
+
+    entryNotice1:
+      "✓ Each ticket has a unique QR code " +
+      "and allows one admission only.",
+
+    entryNotice2:
+      "✓ Keep your ticket ready before " +
+      "reaching the entrance.",
+
+    entryNotice3:
+      "✓ If using a smartphone, increase screen " +
+      "brightness to make scanning easier.",
+
+    entryNotice4:
+      "✓ Once scanned and checked in, " +
+      "the same QR code cannot be used " +
+      "for another entry.",
+
+    entryNotice5:
+      "✓ If you experience any problem, " +
+      "please ask our entrance staff for help.",
+
+    contactTitle: "Contact for Tickets",
+
+    lineTitle: "LINE & WhatsApp",
+
+    lineDescription:
+      "You can also add our representatives on " +
+      "WhatsApp or LINE using their registered " +
+      "phone numbers. Send your payment receipt " +
+      "through your preferred messaging application.",
+
+    contactNote:
+      "Please contact our team before making payment. " +
+      "Tickets are issued only after payment confirmation. " +
+      "Keep your QR ticket safe and present it " +
+      "at the entrance.",
+
+    rights: "All rights reserved.",
+
+    call: "Call",
+    whatsapp: "WhatsApp",
+    facebook: "Facebook",
+
+    whatsappMessage:
+      "Hello R Brothers! I would like to purchase " +
+      "tickets for Kabaddi 5 Yokohama on " +
+      "November 8, 2026. Please provide ticket " +
+      "availability and payment instructions."
+
+  },
+
+  ne: {
+
+    officialEvents: "आधिकारिक कार्यक्रमहरू",
+
+    screeningSubtitle:
+      "योकोहामामा विशेष चलचित्र प्रदर्शन",
+
+    intro:
+      "आर ब्रदर्सको प्रस्तुतिमा नेपाली चलचित्र " +
+      "‘कबड्डी ५’ को विशेष प्रदर्शन जापानको " +
+      "योकोहामामा आयोजना हुँदैछ। " +
+      "साथीभाइ तथा परिवारसँग नेपाली चलचित्रको " +
+      "रमाइलो अनुभव लिन यहाँहरूलाई हार्दिक स्वागत छ।",
+
+    eventInformation: "कार्यक्रमको जानकारी",
+    eventLabel: "कार्यक्रम",
+    eventName: "कबड्डी ५ विशेष प्रदर्शन",
+    dateLabel: "मिति",
+    eventDate: "आइतबार, नोभेम्बर ८, २०२६",
+    doorsLabel: "हल प्रवेश सुरु",
+    doorsTime: "साँझ ५:३० बजे",
+    screeningLabel: "चलचित्र सुरु",
+    screeningTime: "साँझ ६:३० बजे",
+    venueLabel: "स्थान",
+    accessLabel: "यातायात",
+
+    accessValue:
+      "शिन-चुनाशिमा स्टेसन नजिकै। " +
+      "योकोहामा स्टेसनबाट रेलमा करिब १५ मिनेट।",
+
+    generalAdmission: "साधारण टिकट",
+
+    priceNote:
+      "टिकट बुक गर्न तथा भुक्तानीसम्बन्धी " +
+      "जानकारी लिन हाम्रो प्रतिनिधिलाई " +
+      "सम्पर्क गर्नुहोस्।",
+
+    getTickets: "टिकट लिन सम्पर्क गर्नुहोस्",
+
+    viewMap: "गुगल म्यापमा स्थान हेर्नुहोस्",
+
+    discoverVenue: "कार्यक्रम स्थलको परिचय",
+
+    venueDescription:
+      "चलचित्र प्रदर्शन योकोहामाको कोहोकु " +
+      "वार्ड सांस्कृतिक केन्द्रस्थित मिजुकी हलमा " +
+      "हुनेछ। कार्यक्रम स्थलको भित्री दृश्य " +
+      "तलका तस्बिरहरूमा हेर्न सक्नुहुन्छ।",
+
+    auditorium: "मिजुकी हल — सभागृह",
+    reception: "स्वागत तथा रिसेप्सन क्षेत्र",
+    hallInterior: "हलको भित्री दृश्य",
+
+    venueLocationText:
+      "横浜市港北区民文化センター / ミズキーホール। " +
+      "शिन-चुनाशिमा स्टेसनबाट सजिलै पुग्न सकिन्छ।",
+
+    openMaps: "गुगल म्याप खोल्नुहोस्",
+
+    bigScreenHeading: "ठूलो पर्दामा चलचित्रको अनुभव",
+
+    cinemaTitle:
+      "३०० इन्चको विशाल पर्दामा कबड्डी ५",
+
+    cinemaDescription:
+      "३०० इन्चको विशाल स्क्रिनमा " +
+      "Panasonic को उच्च उज्यालोपन भएको " +
+      "व्यावसायिक लेजर प्रोजेक्टरमार्फत " +
+      "कबड्डी ५ हेर्ने अनुभव लिनुहोस्।",
+
+    screenSpec: "विशाल प्रोजेक्सन स्क्रिन",
+    brightnessSpec: "लुमेन्स उज्यालोपन",
+    resolutionSpec: "१९२० × १२०० नेटिभ रिजोलुसन",
+    technologySpec: "लेजर प्रोजेक्सन प्रविधि",
+
+    projectionEquipment: "प्रोजेक्सन उपकरण",
+    projectorLabel: "प्रोजेक्टर",
+    brightnessLabel: "उज्यालोपन",
+    technologyLabel: "प्रविधि",
+    resolutionLabel: "रिजोलुसन",
+    screenSizeLabel: "स्क्रिनको आकार",
+
+    cinemaNote:
+      "यस प्रदर्शनका लागि व्यावसायिक " +
+      "प्रोजेक्सन उपकरण प्रयोग गर्ने योजना छ। " +
+      "वास्तविक दृश्य गुणस्तर सेटअप तथा " +
+      "चलचित्रको स्रोत सामग्रीमा निर्भर हुनेछ।",
+
+    howToGetTicket: "टिकट कसरी प्राप्त गर्ने?",
+
+    buyStep1Title: "आर ब्रदर्सलाई सम्पर्क गर्नुहोस्",
+
+    buyStep1:
+      "टिकट बुक गर्न फोन, फेसबुक वा " +
+      "ह्वाट्सएपमार्फत हाम्रो कुनै पनि " +
+      "प्रतिनिधिलाई सम्पर्क गर्नुहोस्।",
+
+    buyStep2Title: "भुक्तानी विवरण प्राप्त गर्नुहोस्",
+
+    buyStep2:
+      "हाम्रो प्रतिनिधिले टिकट संख्या पुष्टि गरी " +
+      "भुक्तानी गर्ने तरिका र विवरण पठाउनुहुनेछ।",
+
+    buyStep3Title: "भुक्तानी पूरा गर्नुहोस्",
+
+    buyStep3:
+      "भुक्तानी गरेपछि रसिद वा स्क्रिनसट " +
+      "मेसेन्जर, ह्वाट्सएप वा LINE मार्फत पठाउनुहोस्।",
+
+    buyStep4Title: "QR कोडसहितको टिकट प्राप्त गर्नुहोस्",
+
+    buyStep4:
+      "भुक्तानी पुष्टि भएपछि हामी तपाईंलाई " +
+      "छुट्टै QR कोड भएको डिजिटल टिकट पठाउनेछौँ।",
+
+    receiptTitle: "भुक्तानी रसिद पठाउने जानकारी",
+
+    receiptDescription:
+      "भुक्तानी गरेपछि आफूले सम्पर्क गरेको " +
+      "आर ब्रदर्स प्रतिनिधिलाई रसिद पठाउनुहोस्। " +
+      "आफ्नो नाम र टिकट संख्या पनि उल्लेख गर्नुहोस्। " +
+      "भुक्तानी पुष्टि भएपछि QR टिकट जारी गरिनेछ।",
+
+    entryTitle: "हलमा प्रवेश कसरी गर्ने?",
+
+    entryIntro:
+      "हलमा प्रवेश गर्ने प्रक्रिया एकदम सरल छ। " +
+      "प्रत्येक टिकटमा छुट्टै QR कोड हुन्छ। " +
+      "प्रवेशद्वारमा हाम्रो कर्मचारीले उक्त QR कोड " +
+      "स्क्यान गरेर टिकट जाँच गर्नुहुनेछ।",
+
+    entryStep1Title: "१. आफ्नो टिकट प्राप्त गर्नुहोस्",
+
+    entryStep1:
+      "भुक्तानी पुष्टि भएपछि तपाईंले " +
+      "छुट्टै QR कोडसहितको टिकट प्राप्त गर्नुहुनेछ।",
+
+    entryStep2Title: "२. QR कोड देखाउनुहोस्",
+
+    entryStep2:
+      "हलको प्रवेशद्वारमा मोबाइलमा टिकट " +
+      "खोलेर वा प्रिन्ट गरिएको टिकट देखाउनुहोस्।",
+
+    entryStep3Title: "३. कर्मचारीले QR कोड स्क्यान गर्नेछन्",
+
+    entryStep3:
+      "हाम्रो कर्मचारीले R Brothers को " +
+      "टिकट जाँच प्रणालीबाट तपाईंको " +
+      "QR कोड स्क्यान गर्नुहुनेछ।",
+
+    entryStep4Title:
+      "४. टिकट प्रमाणित भएपछि प्रवेश गर्नुहोस्",
+
+    entryStep4:
+      "टिकट मान्य भएको र पहिले प्रयोग " +
+      "नभएको पुष्टि भएपछि तपाईंलाई " +
+      "हलभित्र प्रवेश दिइनेछ।",
+
+    entryNoticeTitle: "महत्त्वपूर्ण जानकारी",
+
+    entryNotice1:
+      "✓ प्रत्येक टिकटमा छुट्टै QR कोड हुन्छ। " +
+      "एउटा टिकटबाट एकपटक मात्र प्रवेश गर्न पाइन्छ।",
+
+    entryNotice2:
+      "✓ प्रवेशद्वारमा पुग्नुअघि आफ्नो " +
+      "टिकट तयार राख्नुहोस्।",
+
+    entryNotice3:
+      "✓ मोबाइलबाट QR कोड देखाउँदा " +
+      "स्क्रिनको उज्यालोपन बढाउनुहोस्।",
+
+    entryNotice4:
+      "✓ एकपटक स्क्यान गरी प्रवेश गरिएको " +
+      "QR कोड अर्को प्रवेशका लागि प्रयोग हुँदैन।",
+
+    entryNotice5:
+      "✓ टिकट जाँचमा समस्या भएमा " +
+      "प्रवेशद्वारमा रहेका कर्मचारीलाई सम्पर्क गर्नुहोस्।",
+
+    contactTitle: "टिकटका लागि सम्पर्क",
+
+    lineTitle: "LINE र WhatsApp",
+
+    lineDescription:
+      "हाम्रा प्रतिनिधिहरूलाई उहाँहरूको " +
+      "दर्ता भएको फोन नम्बरमार्फत " +
+      "WhatsApp वा LINE मा पनि जोड्न सक्नुहुन्छ। " +
+      "भुक्तानीको रसिद आफूलाई सजिलो हुने " +
+      "म्यासेजिङ एपबाट पठाउनुहोस्।",
+
+    contactNote:
+      "भुक्तानी गर्नुअघि हाम्रो प्रतिनिधिलाई " +
+      "सम्पर्क गर्नुहोस्। भुक्तानी पुष्टि भएपछि " +
+      "मात्र टिकट जारी गरिनेछ। " +
+      "आफ्नो QR टिकट सुरक्षित राख्नुहोस् र " +
+      "कार्यक्रमको दिन प्रवेशद्वारमा देखाउनुहोस्।",
+
+    rights: "सर्वाधिकार सुरक्षित।",
+
+    call: "फोन",
+    whatsapp: "WhatsApp",
+    facebook: "Facebook",
+
+    whatsappMessage:
+      "नमस्कार R Brothers! मलाई नोभेम्बर ८, २०२६ मा " +
+      "योकोहामामा हुने कबड्डी ५ चलचित्रको टिकट " +
+      "खरिद गर्न मन छ। कृपया टिकट उपलब्धता " +
+      "तथा भुक्तानीसम्बन्धी जानकारी दिनुहोला।"
+
+  }
+
+};
+
+/* =========================================
+   CURRENT LANGUAGE
+========================================= */
+
+let currentLanguage = "en";
+
+try {
+  const savedLanguage =
+    localStorage.getItem("rbrothers-language");
+
+  if (savedLanguage === "ne" || savedLanguage === "en") {
+    currentLanguage = savedLanguage;
+  }
+} catch (error) {
+  // The page still works if storage is unavailable.
+}
+
+/* =========================================
+   APPLY TRANSLATIONS
+========================================= */
+
+function setLanguage(lang) {
+
+  if (!translations[lang]) return;
+
+  currentLanguage = lang;
+
+  document.documentElement.lang = lang;
+
+  try {
+    localStorage.setItem("rbrothers-language", lang);
+  } catch (error) {
+    // Ignore blocked browser storage.
+  }
+
+  document.querySelectorAll("[data-i18n]")
+    .forEach(element => {
+
+      const key = element.getAttribute("data-i18n");
+
+      if (
+        Object.prototype.hasOwnProperty.call(
+          translations[lang],
+          key
+        )
+      ) {
+        element.textContent = translations[lang][key];
+      }
+    });
+
+  const englishButton =
+    document.getElementById("langEn");
+
+  const nepaliButton =
+    document.getElementById("langNe");
+
+  englishButton.classList.toggle(
+    "active", lang === "en"
   );
 
-  actions.appendChild(call);
-
-  // WHATSAPP
-
-  const whatsapp = document.createElement("a");
-
-  whatsapp.href =
-    "https://wa.me/" +
-    person.whatsapp +
-    "?text=" +
-    encodeURIComponent(whatsappMessage);
-
-  whatsapp.target = "_blank";
-  whatsapp.rel = "noopener noreferrer";
-  whatsapp.className = "whatsapp";
-  whatsapp.textContent = "WhatsApp";
-
-  whatsapp.setAttribute(
-    "aria-label",
-    "Contact " + person.name + " on WhatsApp"
+  nepaliButton.classList.toggle(
+    "active", lang === "ne"
   );
 
-  actions.appendChild(whatsapp);
-
-  // FACEBOOK
-
-  const facebook = document.createElement("a");
-
-  facebook.href = person.facebook;
-  facebook.target = "_blank";
-  facebook.rel = "noopener noreferrer";
-  facebook.className = "facebook";
-  facebook.textContent = "Facebook";
-
-  facebook.setAttribute(
-    "aria-label",
-    "Open " + person.name + "'s Facebook profile"
+  englishButton.setAttribute(
+    "aria-pressed",
+    String(lang === "en")
   );
 
-  actions.appendChild(facebook);
+  nepaliButton.setAttribute(
+    "aria-pressed",
+    String(lang === "ne")
+  );
 
-  card.appendChild(top);
-  card.appendChild(actions);
+  renderContacts();
 
-  contactList.appendChild(card);
+}
 
-});
+/* =========================================
+   CONTACT CARDS
+========================================= */
 
-/* ========================================
+function renderContacts() {
+
+  const contactList =
+    document.getElementById("contactList");
+
+  contactList.innerHTML = "";
+
+  const dictionary = translations[currentLanguage];
+
+  contacts.forEach(person => {
+
+    const card = document.createElement("div");
+    card.className = "contact";
+
+    const top = document.createElement("div");
+    top.className = "contact-top";
+
+    const name = document.createElement("span");
+    name.className = "contact-name";
+    name.textContent = person.name;
+
+    const phone = document.createElement("span");
+    phone.className = "contact-phone";
+    phone.textContent = person.phone;
+
+    top.append(name, phone);
+
+    const actions = document.createElement("div");
+    actions.className = "contact-actions";
+
+    // PHONE BUTTON
+
+    const call = document.createElement("a");
+
+    call.href = "tel:" + person.phone;
+    call.textContent = dictionary.call;
+
+    call.setAttribute(
+      "aria-label",
+      dictionary.call + " " + person.name
+    );
+
+    actions.appendChild(call);
+
+    // WHATSAPP BUTTON
+
+    const whatsapp = document.createElement("a");
+
+    whatsapp.href =
+      "https://wa.me/" +
+      person.whatsapp +
+      "?text=" +
+      encodeURIComponent(dictionary.whatsappMessage);
+
+    whatsapp.target = "_blank";
+    whatsapp.rel = "noopener noreferrer";
+    whatsapp.className = "whatsapp";
+    whatsapp.textContent = dictionary.whatsapp;
+
+    actions.appendChild(whatsapp);
+
+    // FACEBOOK BUTTON
+
+    const facebook = document.createElement("a");
+
+    facebook.href = person.facebook;
+    facebook.target = "_blank";
+    facebook.rel = "noopener noreferrer";
+    facebook.className = "facebook";
+    facebook.textContent = dictionary.facebook;
+
+    actions.appendChild(facebook);
+
+    card.append(top, actions);
+
+    contactList.appendChild(card);
+
+  });
+
+}
+
+/* =========================================
    PHOTO LIGHTBOX
-======================================== */
+========================================= */
 
 function openLightbox(src, alt) {
 
@@ -1415,7 +2292,10 @@ function openLightbox(src, alt) {
 
   lightbox.classList.add("active");
 
-  document.body.style.overflow = "hidden";
+  document.body.classList.add("lightbox-open");
+
+  document.querySelector(".lightbox-close").focus();
+
 }
 
 function closeLightbox() {
@@ -1425,17 +2305,23 @@ function closeLightbox() {
 
   lightbox.classList.remove("active");
 
-  document.body.style.overflow = "";
+  document.body.classList.remove("lightbox-open");
 
 }
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", event => {
 
   if (event.key === "Escape") {
     closeLightbox();
   }
 
 });
+
+/* =========================================
+   INITIALIZE
+========================================= */
+
+setLanguage(currentLanguage);
 
 </script>
 
