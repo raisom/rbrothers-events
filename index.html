@@ -1,459 +1,887 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#111111">
+  <meta charset="UTF-8">
 
-<title>Kabaddi 5 Yokohama | R Brothers</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-<style>
-:root {
-  --black: #111111;
-  --gold: #ad813e;
-  --bg: #faf9f7;
-  --border: #e8e5df;
-  --muted: #777;
-}
+  <meta name="theme-color" content="#faf9f7">
 
-* { box-sizing: border-box; }
+  <meta
+    name="description"
+    content="R Brothers presents Kabaddi 5 – Special Screening in Yokohama on November 8, 2026. Tickets ¥2,500."
+  >
 
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--black);
-  font-family: -apple-system, BlinkMacSystemFont,
-               "Helvetica Neue", Arial, sans-serif;
-}
+  <title>Kabaddi 5 Yokohama | R Brothers Events</title>
 
-.container {
-  max-width: 560px;
-  margin: auto;
-  padding: 20px;
-}
+  <style>
+    :root {
+      --black: #131313;
+      --gold: #a77b38;
+      --background: #faf9f7;
+      --white: #ffffff;
+      --border: #e8e5df;
+      --muted: #777777;
+    }
 
-header {
-  text-align: center;
-  padding: 12px 0 24px;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-.logo {
-  width: 82px;
-  height: 82px;
-  padding: 8px;
-  object-fit: contain;
-  background: #050505;
-  border-radius: 18px;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.brand {
-  margin-top: 8px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 4px;
-}
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--black);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
 
-.poster {
-  display: block;
-  width: 100%;
-  border-radius: 14px;
-}
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
 
-h1 {
-  font-size: 29px;
-  margin: 22px 0 5px;
-  letter-spacing: -1px;
-}
+    .container {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-.subtitle {
-  color: var(--gold);
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-}
+    /* HEADER */
 
-.section {
-  margin-top: 30px;
-}
+    header {
+      text-align: center;
+      padding: 12px 0 25px;
+    }
 
-.section h2 {
-  font-size: 18px;
-  margin-bottom: 16px;
-}
+    .logo {
+      width: 88px;
+      height: 88px;
+      padding: 7px;
+      object-fit: contain;
+      background: #050505;
+      border-radius: 19px;
+    }
 
-.event-details {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 5px 18px;
-}
+    .brand {
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: 4px;
+    }
 
-.detail {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--border);
-}
+    .brand-subtitle {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
 
-.detail:last-child {
-  border-bottom: none;
-}
+    /* POSTER */
 
-.label {
-  color: var(--muted);
-  font-size: 13px;
-}
+    .poster {
+      width: 100%;
+      display: block;
+      border-radius: 15px;
+      box-shadow: 0 8px 35px rgba(0, 0, 0, 0.08);
+    }
 
-.value {
-  font-size: 13px;
-  font-weight: 600;
-  text-align: right;
-}
+    /* EVENT TITLE */
 
-.price {
-  font-size: 34px;
-  font-weight: 750;
-  color: var(--gold);
-}
+    h1 {
+      font-size: 31px;
+      letter-spacing: -0.8px;
+      margin: 25px 0 6px;
+      font-weight: 750;
+    }
 
-.btn {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  margin-top: 12px;
-  text-decoration: none;
-  text-align: center;
-  background: var(--black);
-  color: white;
-  border-radius: 10px;
-  font-weight: 650;
-  font-size: 14px;
-}
+    .subtitle {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 2px;
+      line-height: 1.6;
+    }
 
-.btn-outline {
-  background: white;
-  color: var(--black);
-  border: 1px solid var(--border);
-}
+    .intro {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.8;
+      margin-top: 16px;
+    }
 
-.steps {
-  background: white;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  padding: 18px;
-}
+    /* SECTIONS */
 
-.step {
-  display: flex;
-  align-items: start;
-  gap: 13px;
-  margin-bottom: 17px;
-  font-size: 14px;
-  line-height: 1.5;
-}
+    .section {
+      margin-top: 35px;
+    }
 
-.step:last-child { margin-bottom: 0; }
+    .section h2 {
+      font-size: 19px;
+      margin-bottom: 17px;
+      letter-spacing: -0.3px;
+    }
 
-.number {
-  flex-shrink: 0;
-  width: 25px;
-  height: 25px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--black);
-  color: white;
-  font-size: 12px;
-}
+    /* EVENT DETAILS */
 
-.contact {
-  background: white;
-  padding: 16px;
-  border-radius: 12px;
-  margin-bottom: 10px;
-  border: 1px solid var(--border);
-}
+    .event-details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 4px 18px;
+    }
 
-.contact-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    .detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--border);
+    }
 
-.contact-name {
-  font-weight: 700;
-}
+    .detail:last-child {
+      border-bottom: none;
+    }
 
-.contact-phone {
-  font-size: 13px;
-  color: var(--muted);
-}
+    .label {
+      font-size: 13px;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
 
-.contact-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 12px;
-}
+    .value {
+      font-size: 13px;
+      font-weight: 650;
+      text-align: right;
+      line-height: 1.6;
+    }
 
-.contact-actions a {
-  flex: 1;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 8px;
-  padding: 11px 6px;
-  font-size: 13px;
-  font-weight: 650;
-  background: #f1f1f1;
-  color: #222;
-}
+    /* PRICE */
 
-.contact-actions .facebook {
-  background: #e8f0ff;
-  color: #1877f2;
-}
+    .ticket-section {
+      text-align: center;
+      padding-top: 5px;
+    }
 
-.note {
-  font-size: 12px;
-  line-height: 1.7;
-  color: var(--muted);
-}
+    .price-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var(--muted);
+      font-weight: 700;
+    }
 
-footer {
-  margin-top: 45px;
-  padding-bottom: 25px;
-  text-align: center;
-  font-size: 12px;
-  color: var(--muted);
-}
+    .price {
+      font-size: 40px;
+      color: var(--gold);
+      font-weight: 800;
+      margin: 8px 0;
+      letter-spacing: -1px;
+    }
 
-@media (max-width: 360px) {
-  .container { padding: 14px; }
-  .detail { gap: 8px; }
-  .value { font-size: 12px; }
-}
-</style>
+    .note {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    /* BUTTONS */
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 50px;
+      padding: 13px 15px;
+      margin-top: 12px;
+      text-align: center;
+      text-decoration: none;
+      background: var(--black);
+      color: white;
+      border-radius: 11px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn:active {
+      opacity: 0.7;
+    }
+
+    .btn-outline {
+      background: white;
+      color: var(--black);
+      border: 1px solid var(--border);
+    }
+
+    /* STEPS */
+
+    .steps {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 22px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .step:last-child {
+      margin-bottom: 0;
+    }
+
+    .number {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: var(--black);
+      border-radius: 50%;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .step strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .step-description {
+      color: #666;
+      font-size: 13px;
+    }
+
+    /* RECEIPT INFORMATION */
+
+    .receipt-info {
+      margin-top: 18px;
+      background: #f3efe8;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .receipt-info h3 {
+      font-size: 14px;
+      margin: 0 0 9px;
+    }
+
+    .receipt-info p {
+      font-size: 13px;
+      line-height: 1.8;
+      margin: 0;
+      color: #625a4e;
+    }
+
+    /* CONTACTS */
+
+    .contact {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 17px;
+      margin-bottom: 12px;
+    }
+
+    .contact-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .contact-name {
+      font-size: 16px;
+      font-weight: 750;
+    }
+
+    .contact-phone {
+      font-size: 13px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .contact-actions {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .contact-actions a {
+      min-height: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 9px;
+      padding: 8px 4px;
+      font-size: 12px;
+      font-weight: 700;
+      background: #f1f1f1;
+      color: #222;
+    }
+
+    .contact-actions .whatsapp {
+      background: #e8f8ee;
+      color: #128c4a;
+    }
+
+    .contact-actions .facebook {
+      background: #e8f0ff;
+      color: #1877f2;
+    }
+
+    /* LINE INFORMATION */
+
+    .line-info {
+      margin-top: 17px;
+      padding: 17px;
+      background: #edf8ef;
+      border-radius: 12px;
+    }
+
+    .line-info strong {
+      display: block;
+      font-size: 14px;
+      color: #168c46;
+      margin-bottom: 7px;
+    }
+
+    .line-info p {
+      color: #4b6755;
+      font-size: 12px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 25px 0 30px;
+      border-top: 1px solid var(--border);
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .developer-credit {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .developer-credit a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 360px) {
+      .container {
+        padding: 14px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .value {
+        font-size: 12px;
+      }
+
+      .contact {
+        padding: 13px;
+      }
+
+      .contact-actions {
+        gap: 5px;
+      }
+
+      .contact-actions a {
+        font-size: 11px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <div class="container">
 
-<header>
-  <img src="./logo.png"
-       class="logo"
-       alt="R Brothers Logo">
+  <!-- HEADER -->
 
-  <div class="brand">R BROTHERS</div>
-</header>
+  <header>
 
-<main>
-
-  <img
-    src="./kabaddi5-poster.png"
-    alt="Kabaddi 5 Yokohama Screening"
-    class="poster"
-  >
-
-  <h1>Kabaddi 5</h1>
-  <div class="subtitle">SPECIAL SCREENING · YOKOHAMA</div>
-
-  <section class="section">
-
-    <div class="event-details">
-
-      <div class="detail">
-        <span class="label">Date</span>
-        <span class="value">Sunday, November 8, 2026</span>
-      </div>
-
-      <div class="detail">
-        <span class="label">Doors Open</span>
-        <span class="value">5:30 PM</span>
-      </div>
-
-      <div class="detail">
-        <span class="label">Screening Starts</span>
-        <span class="value">6:30 PM</span>
-      </div>
-
-      <div class="detail">
-        <span class="label">Location</span>
-        <span class="value">
-          Mizuki Hall<br>
-          ミズキーホール<br>
-          横浜市港北区民文化センター
-        </span>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="section" style="text-align:center">
-
-    <div class="label">GENERAL ADMISSION</div>
-
-    <div class="price">¥2,500</div>
-
-    <p class="note">
-      Contact our team to reserve your tickets.
-    </p>
-
-    <a href="#contacts" class="btn">
-      Get Tickets
-    </a>
-
-    <a
-      href="https://www.google.com/maps/search/?api=1&query=横浜市港北区民文化センター"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="btn btn-outline"
+    <img
+      src="./logo.png"
+      alt="R Brothers Logo"
+      class="logo"
     >
-      View Venue on Google Maps
-    </a>
 
-  </section>
-
-  <section class="section">
-
-    <h2>How to Get Your Ticket</h2>
-
-    <div class="steps">
-
-      <div class="step">
-        <span class="number">1</span>
-        <span>
-          Contact an R Brothers representative
-          to reserve your ticket.
-        </span>
-      </div>
-
-      <div class="step">
-        <span class="number">2</span>
-        <span>
-          Receive payment instructions
-          from our team.
-        </span>
-      </div>
-
-      <div class="step">
-        <span class="number">3</span>
-        <span>
-          Complete payment and send your receipt
-          through Facebook Messenger.
-        </span>
-      </div>
-
-      <div class="step">
-        <span class="number">4</span>
-        <span>
-          Once payment is confirmed, receive
-          your unique QR-coded ticket.
-        </span>
-      </div>
-
+    <div class="brand">
+      R BROTHERS
     </div>
 
-  </section>
+    <div class="brand-subtitle">
+      OFFICIAL EVENTS
+    </div>
 
-  <section class="section" id="contacts">
+  </header>
 
-    <h2>Contact for Tickets</h2>
+  <main>
 
-    <div id="contactList"></div>
+    <!-- MOVIE POSTER -->
 
-    <p class="note">
-      Please contact our team before making payment.
-      Tickets are issued only after payment is verified.
-      Keep your QR ticket safe and present it
-      at the entrance.
+    <img
+      src="./kabaddi5-poster.png"
+      alt="Kabaddi 5 Yokohama Movie Screening"
+      class="poster"
+    >
+
+    <!-- EVENT TITLE -->
+
+    <h1>Kabaddi 5</h1>
+
+    <div class="subtitle">
+      SPECIAL SCREENING IN YOKOHAMA
+    </div>
+
+    <p class="intro">
+      R Brothers proudly presents the special screening
+      of the Nepali movie Kabaddi 5 in Yokohama, Japan.
+
+      Join us for an evening of Nepali cinema
+      with friends and family.
     </p>
 
-  </section>
+    <!-- EVENT INFORMATION -->
 
-</main>
+    <section class="section">
 
-<footer>
-  © 2026 R Brothers<br>
-  Kabaddi 5 · Yokohama Special Screening
-</footer>
+      <h2>Event Information</h2>
+
+      <div class="event-details">
+
+        <div class="detail">
+          <span class="label">Event</span>
+
+          <span class="value">
+            Kabaddi 5<br>
+            Special Screening
+          </span>
+        </div>
+
+        <div class="detail">
+          <span class="label">Date</span>
+
+          <span class="value">
+            Sunday, November 8, 2026
+          </span>
+        </div>
+
+        <div class="detail">
+          <span class="label">Doors Open</span>
+
+          <span class="value">
+            5:30 PM
+          </span>
+        </div>
+
+        <div class="detail">
+          <span class="label">Screening Time</span>
+
+          <span class="value">
+            6:30 PM
+          </span>
+        </div>
+
+        <div class="detail">
+          <span class="label">Venue</span>
+
+          <span class="value">
+            Mizuki Hall<br>
+            ミズキーホール<br>
+            横浜市港北区民文化センター
+          </span>
+        </div>
+
+        <div class="detail">
+          <span class="label">Access</span>
+
+          <span class="value">
+            Shin-Tsunashima Station<br>
+            Approximately 15 minutes<br>
+            from Yokohama Station by train
+          </span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TICKET PRICE -->
+
+    <section class="section ticket-section">
+
+      <div class="price-label">
+        GENERAL ADMISSION
+      </div>
+
+      <div class="price">
+        ¥2,500
+      </div>
+
+      <p class="note">
+        Contact our representatives to reserve
+        your tickets and receive payment instructions.
+      </p>
+
+      <a href="#contacts" class="btn">
+        Get Tickets
+      </a>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=横浜市港北区民文化センター"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-outline"
+      >
+        View Location on Google Maps
+      </a>
+
+    </section>
+
+    <!-- TICKET PURCHASE PROCESS -->
+
+    <section class="section">
+
+      <h2>How to Get Your Ticket</h2>
+
+      <div class="steps">
+
+        <div class="step">
+
+          <span class="number">1</span>
+
+          <div>
+            <strong>Contact R Brothers</strong>
+
+            <div class="step-description">
+              Contact any of our representatives
+              using phone, Facebook, or WhatsApp
+              to reserve your tickets.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="step">
+
+          <span class="number">2</span>
+
+          <div>
+            <strong>Receive Payment Instructions</strong>
+
+            <div class="step-description">
+              Our team will provide payment details
+              and confirm your ticket quantity.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="step">
+
+          <span class="number">3</span>
+
+          <div>
+            <strong>Complete Payment</strong>
+
+            <div class="step-description">
+              Make your payment and send a screenshot
+              of your payment receipt through
+              Facebook Messenger, WhatsApp, or LINE.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="step">
+
+          <span class="number">4</span>
+
+          <div>
+            <strong>Receive Your QR Ticket</strong>
+
+            <div class="step-description">
+              After payment is verified,
+              our team will send your digital ticket
+              containing a unique QR code.
+
+              Present the QR code at the entrance.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="receipt-info">
+
+        <h3>Payment Receipt Submission</h3>
+
+        <p>
+          After completing payment, please send
+          your payment receipt to the R Brothers
+          representative you contacted.
+          You may send it through
+          <strong>Facebook Messenger, WhatsApp, or LINE</strong>.
+
+          Please include your name and number of tickets.
+
+          Your QR ticket will be issued after
+          the payment has been confirmed.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACTS -->
+
+    <section class="section" id="contacts">
+
+      <h2>Contact for Tickets</h2>
+
+      <div id="contactList"></div>
+
+      <div class="line-info">
+
+        <strong>LINE & WhatsApp</strong>
+
+        <p>
+          You can also add our representatives
+          on WhatsApp or LINE using their
+          registered phone numbers.
+
+          After making your payment,
+          send your receipt directly through
+          your preferred messaging application.
+        </p>
+
+      </div>
+
+      <p class="note" style="margin-top:18px">
+        Please contact our team before sending
+        any payment.
+
+        Tickets are issued only after successful
+        payment confirmation.
+
+        Keep your QR ticket safe and present it
+        at the entrance on the event day.
+      </p>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="copyright">
+      © 2026 R Brothers. All rights reserved.
+    </div>
+
+    <div class="developer-credit">
+      Created with ❤️ by
+      <a
+        href="https://www.facebook.com/som.rai/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        SOM RAI
+      </a>
+    </div>
+
+  </footer>
 
 </div>
 
 <script>
 
-// Add Facebook profile URLs below when available.
+  // ========================================
+  // CONTACT INFORMATION
+  // ========================================
 
-const contacts = [
-  {
-    name: "Som",
-    phone: "07074938119",
-    facebook: ""
-  },
-  {
-    name: "Bason",
-    phone: "09035363760",
-    facebook: ""
-  },
-  {
-    name: "Bhabin",
-    phone: "08064454426",
-    facebook: ""
-  },
-  {
-    name: "Nisan",
-    phone: "08095232999",
-    facebook: ""
-  }
-];
+  const contacts = [
 
-const container =
-  document.getElementById("contactList");
+    {
+      name: "Som",
+      phone: "07074938119",
+      whatsapp: "817074938119",
+      facebook: "https://www.facebook.com/som.rai/"
+    },
 
-contacts.forEach(person => {
+    {
+      name: "Bason",
+      phone: "09035363760",
+      whatsapp: "819035363760",
+      facebook: "https://www.facebook.com/basanta.rai.52459"
+    },
 
-  const card = document.createElement("div");
-  card.className = "contact";
+    {
+      name: "Bhabin",
+      phone: "08064454426",
+      whatsapp: "818064454426",
+      facebook: "https://www.facebook.com/vaabinn.ryee"
+    },
 
-  const top = document.createElement("div");
-  top.className = "contact-top";
+    {
+      name: "Nisan",
+      phone: "08095232999",
+      whatsapp: "818095232999",
+      facebook: "https://www.facebook.com/nisan.k.rai"
+    }
 
-  const name = document.createElement("span");
-  name.className = "contact-name";
-  name.textContent = person.name;
+  ];
 
-  const phone = document.createElement("span");
-  phone.className = "contact-phone";
-  phone.textContent = person.phone;
+  // ========================================
+  // WHATSAPP MESSAGE
+  // ========================================
 
-  top.append(name, phone);
+  const whatsappMessage =
+    "Hello R Brothers! " +
+    "I would like to purchase tickets for " +
+    "Kabaddi 5 – Yokohama Screening " +
+    "on November 8, 2026. " +
+    "Please provide ticket availability " +
+    "and payment instructions.";
 
-  const actions = document.createElement("div");
-  actions.className = "contact-actions";
+  // ========================================
+  // CREATE CONTACT CARDS
+  // ========================================
 
-  const call = document.createElement("a");
-  call.href = "tel:" + person.phone;
-  call.textContent = "Call";
+  const contactList =
+    document.getElementById("contactList");
 
-  actions.appendChild(call);
+  contacts.forEach(person => {
 
-  if (person.facebook) {
-    const fb = document.createElement("a");
+    const card = document.createElement("div");
+    card.className = "contact";
 
-    fb.href = person.facebook;
-    fb.target = "_blank";
-    fb.rel = "noopener noreferrer";
-    fb.className = "facebook";
-    fb.textContent = "Facebook";
+    // NAME AND PHONE
 
-    actions.appendChild(fb);
-  }
+    const top = document.createElement("div");
+    top.className = "contact-top";
 
-  card.append(top, actions);
-  container.appendChild(card);
+    const name = document.createElement("span");
+    name.className = "contact-name";
+    name.textContent = person.name;
 
-});
+    const phone = document.createElement("span");
+    phone.className = "contact-phone";
+    phone.textContent = person.phone;
+
+    top.appendChild(name);
+    top.appendChild(phone);
+
+    // ACTION BUTTONS
+
+    const actions = document.createElement("div");
+    actions.className = "contact-actions";
+
+    // CALL BUTTON
+
+    const call = document.createElement("a");
+
+    call.href = "tel:" + person.phone;
+    call.textContent = "Call";
+    call.setAttribute(
+      "aria-label",
+      "Call " + person.name
+    );
+
+    actions.appendChild(call);
+
+    // WHATSAPP BUTTON
+
+    const whatsapp = document.createElement("a");
+
+    whatsapp.href =
+      "https://wa.me/" +
+      person.whatsapp +
+      "?text=" +
+      encodeURIComponent(whatsappMessage);
+
+    whatsapp.target = "_blank";
+    whatsapp.rel = "noopener noreferrer";
+    whatsapp.className = "whatsapp";
+    whatsapp.textContent = "WhatsApp";
+
+    whatsapp.setAttribute(
+      "aria-label",
+      "Contact " + person.name + " on WhatsApp"
+    );
+
+    actions.appendChild(whatsapp);
+
+    // FACEBOOK BUTTON
+
+    const facebook = document.createElement("a");
+
+    facebook.href = person.facebook;
+    facebook.target = "_blank";
+    facebook.rel = "noopener noreferrer";
+    facebook.className = "facebook";
+    facebook.textContent = "Facebook";
+
+    facebook.setAttribute(
+      "aria-label",
+      "Open " + person.name + "'s Facebook profile"
+    );
+
+    actions.appendChild(facebook);
+
+    // APPEND CARD
+
+    card.appendChild(top);
+    card.appendChild(actions);
+
+    contactList.appendChild(card);
+
+  });
 
 </script>
 
